@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/responsive/responsive.css">
+    <title>Frontend Mentor | Dictionary web app</title>
+  </head>
+  <body>
+ <div class="root">
+     <header>
+      <img src="./assets/images/logo.svg" alt="logo" />
+      <div class="img-select">
+        <select onchange="fontFamily(this.value)" id="select">
+          <option id="Inter" value="Inter">Sans Serif</option>
+          <option id="Lora" value="Lora">Serif</option>
+          <option id="Mono" value="Mono">Mono</option>
+        </select>
+        <label class="switch">
+  <input type="checkbox" checked id="radio" value="black" onchange="color(this.value)"/>
+  <span class="slider round"></span>
+</label>
+        <img src="./assets/images/icon-moon.svg" alt="moon" />
+      </div>
+    </header>
+    <section>
+      <div class="input">
+        <input type="search" id="searchInput" placeholder="search" />
+      </div>
+      <div class="for-info">
+        <h1 id="info1"></h1>
+        <p id="phone"></p>
+      </div>
+      <div class="for-p-hr">
+        <p id="info2">noun</p>
+        <div class="hr"></div>
+      </div>
+      <div class="mean">
+        <p>meaning</p>
+        <div class="for-hr-p1" style="padding-top: 25px; padding-bottom: 15px">
+          <hr />
+          <p id="infop1">lorem</p>
+        </div>
+        <div class="for-hr-p1">
+          <hr />
+          <p id="infop2">lorem</p>
+        </div>
+        <div class="for-hr-p1" style="padding-top: 15px">
+          <hr />
+          <p id="infop3">lorem</p>
+        </div>
+      </div>
+      <div class="synonym">
+        <p>synonyms</p>
+        <h6>lorem</h6>
+      </div>
+      <div class="for-p-hr" style="padding-top: 40px">
+        <p id="info5">verb</p>
+        <div class="hr"></div>
+      </div>
+      <div class="meaning">
+        <p id="meaning">meaning</p>
+        <div class="for-hr-p1"style="padding-top: 25px; display: flex; align-items: center" >
+          <hr  style=" width: 5px;
+              height: 5px;
+              border: none;
+              border-radius: 50%;
+              background-color: #8f19e8;
+              margin-left: 22px;
+              margin-right: 20px;"/>
+          <p id="info6">lorem</p>
+        </div>
+      </div>
+    </section>
+    <hr id="hr" />
+    <div class="source">
+      <p>source</p>
+      <a href="#">https://en.wiktionary.org/wiki/</a>
+    </div>
+ </div>
+  </body>
+  <script src="./assets/js/script.js"></script>
+</html>
